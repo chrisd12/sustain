@@ -13,9 +13,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import Web3 from 'web3';
+import { MetamaskConnect} from './metamask';
+
 
 const pages = ['Home', 'Projects', 'Myprojects'];
 const settings = ['Profile','Logout'];
+
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,16 +40,18 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: '#06365D' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <img src={require("../assets/sustain.png")} alt="my image" style={{ width: 75, height: 75}} />
+
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -56,7 +62,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            SUSTAIN
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -132,7 +138,7 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-
+         <MetamaskConnect/>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
