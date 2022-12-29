@@ -8,7 +8,7 @@ function App() {
     <div> 
 
         <p>
-            myprojects
+            In construction
         </p>
       </div>
   );
