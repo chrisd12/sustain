@@ -27,7 +27,7 @@ function App() {
             <Image
               boxSize="300px"
               src={require("../assets/sustainability_home.jpg")}
-              alt="Dan Abramov"
+              alt="pic1"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ function App() {
             <Image
               boxSize="300px"
               src={require("../assets/sustainability.jpeg")}
-              alt="Dan Abramov"
+              alt="pic2"
             />
           </div>
           <div
@@ -74,7 +74,7 @@ function App() {
           <Image
             boxSize="300"
             src={require("../assets/water_home.jpeg")}
-            alt="Dan Abramov"
+            alt="pic3"
           />
         </div>
       </div>
