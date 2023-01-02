@@ -1,61 +1,26 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import Slider from '@mui/material/Slider';
-import { Button, CardActionArea, CardActions, requirePropFactory } from '@mui/material';
-import {useState, setValue} from 'react';
-
+import { ProjectCard } from './projetCard';
 
 export default function MultiActionAreaCard() {
-  const [sliderValue, setValue] = useState(1000);
-
-  const sliderChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
-    <Card sx={{ maxWidth: 345, margin: 2.5, boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)"}}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={require("../assets/nairobi.jpg")}
-          alt="solar plant"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            30 kW Solar Plant in Nairobi, Kenya
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            This investment will be used to build a solar plant in Nairobi, on the roof of a school. This solar plant will be loaned 
-            to the school, and thus providing a 10% ROI.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-      <Slider
-        aria-label="Temperature"
-        defaultValue={1000}
-        valueLabelDisplay="auto"
-        onChange={sliderChange}
-        step={200}
-        marks
-        min={200}
-        max={5000}
-        />
-      </CardActions>
-      <CardContent>
-      <Typography gutterBottom variant="h5" component="div">
-          {sliderValue} USDT
-        </Typography>
-      </CardContent>
-      <CardActions sx={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
-        <Button size="medium" color="primary" style={{ backgroundColor: "lightgrey", width: "200px"  }}>
-          Invest
-        </Button>
-      </CardActions>
-    </Card>
+    <div>
+      <ProjectCard 
+        title="30 kW Solar Plant in Nairobi, Kenya"
+        picture = 'nairobi.jpg'
+        description = "This investment will be used to build a solar plant in Nairobi, on the roof of a school. This solar plant will be loaned to the school, and thus providing a 10% ROI."
+        company = "Nairobi Solar"
+        contract = "0x8A13F5a7658FA6639B9d09C475b80b1B546BD8A4"
+       />
+
+      <ProjectCard 
+        title="Water pump for 200 inhabitants"
+        picture = 'water_access.jpg'
+        description = "The water access project in Thacd aims to improve the quality and availability of clean drinking water for the community. The project includes the construction of a new well and  water treatment system. In addition, the project will also include the installation of a distribution network to ensure that the water is easily accessible to all households in the community."
+        company = "TchadDrinks"
+        contract = "0x8A13F5a7658FA6639B9d09C475b80b1B546BD8A4"
+       />
+       
+</div>
   );
 }

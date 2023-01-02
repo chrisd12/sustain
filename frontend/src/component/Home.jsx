@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import { Router, Routes, Route } from "react-router-dom";
 import Navbar from "./header";
 import { Image } from "@chakra-ui/react";
@@ -11,11 +11,11 @@ function App() {
           <h1>Welcome to sustain</h1>
           <h2>The WEB3 Crowdfunding platform for sustainable projects</h2>
         </div>
-        <div style={{ display: "flex", "justify-content": "space-between" }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div
-            style={{ "text-align": "justify", width: "45%", margin: "40px" }}
+            style={{ textAlign: "justify", width: "45%", margin: "40px" }}
           >
-            <p style={{ "font-size": "22px" }}>
+            <p style={{ fontSize: "22px" }}>
               At Sustainable Crowdfunding, we believe that every person has the
               power to make a positive impact on the world. That’s why we
               created this platform – to connect people who are passionate about
@@ -25,8 +25,8 @@ function App() {
           </div>
           <div style={{ margin: "50px" }}>
             <Image
-              boxSize="400px"
-              src={require("../assets/sustain.png")}
+              boxSize="300px"
+              src={require("../assets/sustainability-enabling-sustainable-development.jpg")}
               alt="Dan Abramov"
             />
           </div>
@@ -34,18 +34,18 @@ function App() {
 
         <div style={{ height: "50px" }}></div>
 
-        <div style={{ display: "flex", "justify-content": "space-between" }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={{ margin: "50px" }}>
             <Image
-              boxSize="400px"
-              src={require("../assets/sustain.png")}
+              boxSize="300px"
+              src={require("../assets/sustainability.jpeg")}
               alt="Dan Abramov"
             />
           </div>
           <div
-            style={{ "text-align": "justify", width: "45%", margin: "40px" }}
+            style={{ textAlign: "justify", width: "45%", margin: "40px" }}
           >
-            <p style={{ "font-size": "22px" }}>
+            <p style={{ fontSize: "22px" }}>
               Our mission is simple: to support and promote sustainable projects
               that benefit the environment, society, and the economy. We believe
               that sustainability is key to building a better future for
@@ -58,9 +58,9 @@ function App() {
         </div>
       </div>
 
-      <div style={{ display: "flex", "justify-content": "space-between" }}>
-        <div style={{ "text-align": "justify", width: "45%", margin: "40px" }}>
-          <p style={{ "font-size": "22px" }}>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ textAlign: "justify", width: "45%", margin: "40px" }}>
+          <p style={{ fontSize: "22px" }}>
             We understand that finding and supporting sustainable projects can
             be a challenge, which is why we’ve made it easy for you to discover
             and support the campaigns that matter most to you. Simply browse
@@ -72,8 +72,8 @@ function App() {
         </div>
         <div style={{ margin: "50px" }}>
           <Image
-            boxSize="400px"
-            src={require("../assets/sustain.png")}
+            boxSize="300"
+            src={require("../assets/water-reduction-1808x1204.jpeg")}
             alt="Dan Abramov"
           />
         </div>
