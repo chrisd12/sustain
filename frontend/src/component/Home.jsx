@@ -26,7 +26,7 @@ function App() {
           <div style={{ margin: "50px" }}>
             <Image
               boxSize="300px"
-              src={require("../assets/sustainability-enabling-sustainable-development.jpg")}
+              src={require("../assets/sustainability_home.jpg")}
               alt="Dan Abramov"
             />
           </div>
@@ -73,7 +73,7 @@ function App() {
         <div style={{ margin: "50px" }}>
           <Image
             boxSize="300"
-            src={require("../assets/water-reduction-1808x1204.jpeg")}
+            src={require("../assets/water_home.jpeg")}
             alt="Dan Abramov"
           />
         </div>
