@@ -1,3 +1,4 @@
+//connect with metamask
 import * as React from 'react';
 import Web3 from 'web3';
 import Button from '@mui/material/Button';

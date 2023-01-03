@@ -1,6 +1,5 @@
+//Home page
 import * as React from 'react';
-import { Router, Routes, Route } from "react-router-dom";
-import Navbar from "./header";
 import { Image } from "@chakra-ui/react";
 
 function App() {

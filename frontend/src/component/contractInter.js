@@ -1,3 +1,4 @@
+//code to interact with the projects smart contract, such as funding the contract
 import Web3 from "web3";
 import ContractAbi from "../assets/abi.json";
  

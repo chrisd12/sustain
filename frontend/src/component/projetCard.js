@@ -1,3 +1,4 @@
+//project card component (used in the projects page)
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -28,7 +29,6 @@ const investP = async (sliderValue, contractAddress) => {
   
   export function ProjectCard(props) {
     const [sliderValue, setValue] = useState(0.05);
-  
     const sliderChange = (event, newValue) => {
       setValue(newValue);
     };

@@ -1,5 +1,6 @@
+//main page, managing the nav bar and the routing of the different pages
 import React from "react";
-import {Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/header";
 import Home from "./component/Home";
 import Projects from "./component/Projects";

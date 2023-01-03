@@ -1,6 +1,5 @@
+//my projects page
 import React from "react";
-import {Router, Routes, Route } from "react-router-dom";
-import Navbar from "./header";
 
 
 function App() {
