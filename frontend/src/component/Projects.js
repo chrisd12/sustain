@@ -16,7 +16,7 @@ export default function MultiActionAreaCard() {
       <ProjectCard 
         title="Water pump for 200 inhabitants"
         picture = 'water_access.jpg'
-        description = "The water access project in Thacd aims to improve the quality and availability of clean drinking water for the community. The project includes the construction of a new well and  water treatment system. In addition, the project will also include the installation of a distribution network to ensure that the water is easily accessible to all households in the community."
+        description = "The water access project in Tchad aims to improve the quality and availability of clean drinking water for the community. The project includes the construction of a new well and  water treatment system. In addition, the project will also include the installation of a distribution network to ensure that the water is easily accessible to all households in the community."
         company = "TchadDrinks"
         contract = "0x8A13F5a7658FA6639B9d09C475b80b1B546BD8A4"
        />
