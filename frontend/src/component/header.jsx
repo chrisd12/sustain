@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { MetamaskConnect} from './metamask';
 
 const pages = ['Home', 'Projects', 'Myprojects'];
-const settings = ['Profile','Logout'];
+const settings = ['Signup', 'Login','Logout'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -134,7 +134,11 @@ function Navbar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center">
+                  <Link style={{textDecoration: "none", color:"black"}}  to={`/${setting}`}>
+                      {setting}
+                    </Link></Typography>
+
                 </MenuItem>
               ))}
             </Menu>
